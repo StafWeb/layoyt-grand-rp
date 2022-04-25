@@ -1,0 +1,133 @@
+.footer{
+    margin-top: 100px;
+    background-color: #040405;
+    background-image: url(../../image/bg-footer.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.footer-404{
+    margin-top: 0;
+}
+
+.footer__container{
+    display: flex;
+    padding: 16px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.footer__head {
+    display: flex;
+    flex-wrap: wrap;
+    width: 230px;
+    margin: 40px 0 100px 50px;
+}
+.footer__head-log {
+    width: 142px;
+    height: 42px;
+}
+.header__lang {
+}
+.footer_lang {
+    margin: 0px;
+    margin-left: 38px;
+    align-items: center;
+}
+
+.footer__lang_btn {
+}
+
+.footer__lang_list {
+}
+
+.footer__lang_item {
+}
+
+.footer__lang_img {
+}
+
+.footer__head_info {
+    font-family: 'PT Sans', serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #FFFFFF;
+    opacity: 0.5;
+    margin-top: 29px;
+}
+
+.footer__nav {
+    display: flex;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.footer__nav_group:not(:last-child) {
+    margin-right: 100px;
+}
+.footer__nav_list {
+}
+.footer__nav_item:not(:last-child) {
+    margin-bottom: 18px;
+}
+
+.footer__nav_item a{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.footer__nav_item a:hover{
+    background: linear-gradient(90deg, #ACD685 0%, #56851F 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer__cta {
+    display: flex;
+    margin-left: 187px;
+    margin-top: 73px;
+}
+.footer__cta_bonus {
+    margin-right: 72px;
+    text-transform: uppercase;
+}
+.footer__cta_p1 {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 96.5%;
+
+}
+.footer__cta_p2 {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 96.5%;
+    color: #FFDE2A;
+}
+.footer__cta_time {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 96.5%;
+    letter-spacing: 0.2em;
+    
+}
+.cta__btn {
+    width: 259px;
+    height: 66px;
+    background: #ffde2a;
+    box-shadow: 0px 0px 200px #ffde2a;
+    padding-top: 22px;
+}
+.cta__link {
+    display: block;
+    text-align: center;
+    font-family: 'PT Sans', serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #161323;
+}

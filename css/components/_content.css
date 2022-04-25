@@ -1,0 +1,129 @@
+.content{
+    height: 100%;
+}
+.main_content {
+    margin-top: 47px;
+}
+
+.single-content{
+    margin-top: 24px;
+}
+
+.bread__crumbs {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 100%;
+    color: #ffffff;
+    position: relative;
+    
+}
+
+.bread__crumbs_list {
+    display: flex;
+}
+.bread__crumbs_item {
+    position: relative;
+    
+}
+
+.bread__crumbs_item:not(:last-child){
+    margin-right: 58px;
+}
+
+.bread__crumbs_item:not(:first-child)::before{
+    position: absolute;
+    content: "";
+    left: -24px;
+    top: 1.5px;
+    width: 10px;
+    height: 10px;
+    background: url(../../image/sep.svg) no-repeat center / cover;
+}
+
+.bread__crumbs_link {
+    color: #ffffff;
+}
+
+.bread__crumbs_span{
+    opacity: 0.4;
+}
+
+.content__bg {
+    width: 100%;
+    height: 332px;
+    margin-top: 24px;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.content__head_title {
+    max-width: 542px;
+    margin: 50px;
+}
+.content__head_title h3,
+.content__head_title h1{
+    display: inline;
+    font-family: 'Akrobat', serif;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 100%;
+    color: #FFFFFF;
+    background: black;
+}
+
+.content__head_btn {
+    width: 70px;
+    height: 70px;
+    background-color: black;
+    margin: 38px;
+    position: relative;
+}
+.content__head_btn-span {
+    position: absolute;
+    left: 20px;
+    top: 27px;
+    width: 29px;
+    height: 17px;
+    background: url(../../image/btn-right.svg) no-repeat center / cover;
+}
+
+.cta {
+    margin-bottom: 32px;
+}
+.cta__block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(131.17deg, #DE4261 0%, #8E1626 100%);
+    border-radius: 10px;
+    padding: 15.85px 17px 17px 222px;
+    position: relative;
+}
+.cta__text {
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+.cta__title {
+    /* font-weight: 700; */
+    font-size: 34px;
+    line-height: 41px;
+    /* text-transform: uppercase; */
+}
+.cta__p {
+    /* font-weight: 700; */
+    font-size: 18px;
+    line-height: 22px;
+    /* text-transform: uppercase; */
+}
+
+.cta__block::before{
+    position: absolute;
+    content: "";
+    top: -16px;
+    left: -36px;
+    width: 264.34px;
+    height: 161.23px;
+    background: url(../../image/diamond.png) no-repeat center / cover;
+}

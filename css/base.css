@@ -1,0 +1,26 @@
+html{
+    height: 100%;
+}
+body{
+    font-family: 'Akrobat', serif;
+    background-color: #161323;
+    background-image: url(../../image/bg.png);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.conteiner-content{
+    max-width: 1216px;
+    width: 100%;
+    height: 100%;
+    padding: 0px 16px;
+    margin: 0 auto;
+}
+main{
+    flex-grow: 1;
+}
+
+footer{
+    flex-shrink: 0;
+}

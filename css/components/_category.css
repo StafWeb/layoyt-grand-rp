@@ -1,0 +1,55 @@
+.category {
+    margin-top: 32px;
+    margin-bottom: 70px;
+}
+.сategory__title{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 24px;
+}
+.category__title-span {
+    position: absolute;
+    background: url(../../image/Rectangle.svg);
+    top: 13px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+}
+.сategory__title-h{
+    font-weight: 900;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+.category__title-link {
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration-line: underline;
+    color: #ffde2a;
+    align-items: end;
+    display: inherit;
+}
+.category__list {
+}
+.category__list-ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+}
+.category__item {
+    height: 100px;
+}
+.category__item-link {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+    color: #ffffff;
+
+}
+.category__item-icon {
+    width: 20px;
+    height: 20px;
+}

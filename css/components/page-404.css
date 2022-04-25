@@ -1,0 +1,43 @@
+.page-404 {
+    height: 100%;
+    display: flex;
+    padding: 50px 0 0;
+}
+.page-404__content{
+    position: relative;
+    left: -170px;
+    top: 130px;
+    z-index: 1;
+}
+.page-404__title {
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+.page-404__title-span{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 100%;
+}
+.page-404__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 186px;
+    height: 66px;
+    background: #DD3549;
+    font-family: 'PT Sans', serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    color: #ffffff;
+    margin-top: 61px;
+}
+.page-404__bg {
+    width: 734px;
+    height: 846px;
+    object-fit: cover;
+    filter: drop-shadow(102px 32px 36px rgba(0, 0, 0, 0.45));
+    order: -1;
+}
