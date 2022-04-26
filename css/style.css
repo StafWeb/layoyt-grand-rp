@@ -1,5 +1,6 @@
 @import "./reset.css";
 @import "./base.css";
+@import "../js/swiper-bundle.min.css";
 @import "./components/_header.css";
 @import "./components/_content.css";
 @import "./components/_content.post.css";
