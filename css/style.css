@@ -6,8 +6,9 @@
 @import "./components/_content.post.css";
 @import "./components/_category.css";
 @import "./components/_info-car.css";
-@import "./components/_swiper.css";
+/* @import "./components/_swiper.css"; */
 @import "./components/_guide.css";
+@import "./components/_swiper-test.css";
 @import "./components/page-404.css";
 @import "./components/_footer.css";
 @import "../fonts/akrobat.css";
