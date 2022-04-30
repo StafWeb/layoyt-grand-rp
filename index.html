@@ -25,8 +25,8 @@
             <form class="header__form" action="/">
                 <input type="text" class="header__form_search" placeholder="Поиск">
             </form>
-            <nav class="header__nav">
-                <ul class="header__nav_list">
+            <nav class="header__nav" data-nav>
+                <ul class="header__nav_list" >
                     <li class="header__nav_item">
                         <a href="#" class="header__nav_link">Программы</a>
                     </li>
@@ -53,6 +53,9 @@
                     </li>
                 </ul>
             </nav>
+            <button class="burger" data-burger aria-label="Открыть меню" aria-expanded="false">
+                <span class="burger__line"></span>
+            </button>
         </div>
     </header>
     <main class="content main_content">
@@ -330,6 +333,7 @@
             </section>
         </div>
     </footer>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
