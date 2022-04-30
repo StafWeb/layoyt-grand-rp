@@ -141,32 +141,70 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img class="swiper-slide__img" src="./image/bg-slider.png" alt="">
+                                <div class="swiper-slide__caption">
+                                    <h4 class="swiper-slide__title">О проекте</h4>
+                                    <p class="swiper-slide__text">за 2 минуты</p>
+                                </div>
+                                <button class="swiper-slide__btn" data-graph-path="first"></button>
                             </div>
                             <div class="swiper-slide">
                                 <img class="swiper-slide__img" src="./image/card3.png" alt="">
-
+                                <div class="swiper-slide__caption">
+                                    <h4 class="swiper-slide__title">О проекте</h4>
+                                    <p class="swiper-slide__text">за 2 минуты</p>
+                                </div>
+                                <button class="swiper-slide__btn btn" data-graph-path="second"></button>
                             </div>
                             <div class="swiper-slide">
                                 <img class="swiper-slide__img" src="./image/videos-slider-2.jpeg" alt="">
-
+                                <div class="swiper-slide__caption">
+                                    <h4 class="swiper-slide__title">О проекте</h4>
+                                    <p class="swiper-slide__text">за 2 минуты</p>
+                                </div>
+                                <button class="swiper-slide__btn" data-graph-path="first"></button>
                             </div>
                         </div>
                     </div>
                     <div class="swiper__descr">
                         <h3 class="swiper__descr_title">Grand role play <span>gta v</span></h3>
-                        <a href="#" class="swiper__descr_link">Как начать играть</a>
+                        <a href="" class="swiper__descr_link">Как начать играть</a>
                     </div>
                 </div>
                 <div class="swiper-bottom">
                     <div class="swiper-pagination">
                         <span class="swiper-pagination-bullet"></span>
                     </div>
-                    <span class="swiper__span"></span>
+                    <div class="swiper__span"></div>
+                </div>
+                <div class="graph-modal">
+                    <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="first">
+                        <button class="btn-reset graph-modal__close js-modal-close"
+                            aria-label="Закрыть модальное окно"></button>
+                        <div class="graph-modal__content">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/9kUKTGoroKk"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="second">
+                        <button class="btn-reset graph-modal__close js-modal-close"
+                            aria-label="Закрыть модальное окно"></button>
+                        <div class="graph-modal__content">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/6CcDcAXoV-8"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
     </main>
     <footer class="footer">
+        <div id="modal-youtube" class="modais" data-izimodal-autoopen data-izimodal-transitionin="fadeInDown"
+            data-izimodal-title="Youtube"
+            data-izimodal-iframeURL="https://www.youtube.com/embed/1G4isv_Fylg?autoplay=1"></div>
         <div class="footer__container">
             <section class="footer__head">
                 <img src="./image/footer-log.svg" alt="" class="footer__head-log">
@@ -211,6 +249,7 @@
         </div>
     </footer>
     <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/graph-modal.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 
