@@ -25,8 +25,8 @@
             <form class="header__form" action="/">
                 <input type="text" class="header__form_search" placeholder="Поиск">
             </form>
-            <nav class="header__nav">
-                <ul class="header__nav_list">
+            <nav class="header__nav" data-nav>
+                <ul class="header__nav_list" >
                     <li class="header__nav_item">
                         <a href="#" class="header__nav_link">Программы</a>
                     </li>
@@ -55,7 +55,7 @@
             </nav>
             <button class="burger" data-burger aria-label="Открыть меню" aria-expanded="false">
                 <span class="burger__line"></span>
-              </button>
+            </button>
         </div>
     </header>
     <main class="content single-content">
@@ -181,10 +181,10 @@
                 </div>
                 <div class="graph-modal">
                     <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="first">
-                        <button class="btn-reset graph-modal__close js-modal-close"
+                        <button class="btn-reset graph-modal__close js-modal-close btn-close"
                             aria-label="Закрыть модальное окно"></button>
                         <div class="graph-modal__content">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/9kUKTGoroKk"
+                                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/9kUKTGoroKk"
                                     title="YouTube video player" frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen></iframe>
@@ -194,7 +194,7 @@
                         <button class="btn-reset graph-modal__close js-modal-close"
                             aria-label="Закрыть модальное окно"></button>
                         <div class="graph-modal__content">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/6CcDcAXoV-8"
+                            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/6CcDcAXoV-8"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
@@ -203,6 +203,7 @@
                 </div>
             </section>
         </div>
+        <div class="overlay-nav"></div>
     </main>
     <footer class="footer">
         <div id="modal-youtube" class="modais" data-izimodal-autoopen data-izimodal-transitionin="fadeInDown"

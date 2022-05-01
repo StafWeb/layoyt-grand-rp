@@ -127,3 +127,13 @@
     height: 161.23px;
     background: url(../../image/diamond.png) no-repeat center / cover;
 }
+
+@media (max-width: 810px){
+    .content__bg{
+        height: 255px;
+    }
+    .content__head_title h3,
+    .content__head_title h1{
+        font-size: 50px;
+    }
+}

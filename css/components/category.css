@@ -53,3 +53,13 @@
     width: 20px;
     height: 20px;
 }
+@media (max-width: 1217px){
+    .category__list-ul{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (max-width: 738px){
+    .category__list-ul{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

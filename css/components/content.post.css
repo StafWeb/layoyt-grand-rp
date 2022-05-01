@@ -49,3 +49,21 @@
     color: #FFFFFF;
     opacity: 0.4;
 }
+
+@media (max-width: 1217px){
+    .content__post{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .content__card{
+        width: 100%;
+    }
+    .content__card_img{
+        height: 250px;
+    }
+}
+@media (max-width: 890px){
+    .content__post{
+        grid-template-columns: 1fr;
+    }
+}
