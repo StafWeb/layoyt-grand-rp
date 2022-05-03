@@ -30,19 +30,20 @@ const swiper = new Swiper('.swiper', {
         clickable: true,
     },
 });
-const modal = new GraphModal();
-const vidos = document.querySelectorAll('.video');
-const modals = document.querySelectorAll('.graph-modal__container');
 
-// btnClose.addEventListener('click', () => {
-//     const videoLink = vidos.src;
-//     vidos.src = '';
-//     vidos.src = videoLink;
-//   });
-modals.forEach(el => {
-    el.addEventListener('click', () => {
-        const videoLink = vidos.src;
-        vidos.src = '';
-        vidos.src = videoLink;
-    });
+const videos = document.querySelectorAll('iframe');
+
+const modal = new GraphModal({
+	isOpen: (modal) => {
+
+	},
+	isClose: () => {
+        for (let vid of videos){
+            const videoLink = vid.src;
+        vid.src = '';
+        vid.src = videoLink;
+        console.log(close);
+        };
+        
+	}
 });

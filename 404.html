@@ -25,7 +25,7 @@
             <form class="header__form" action="/">
                 <input type="text" class="header__form_search" placeholder="Поиск">
             </form>
-            <nav class="header__nav">
+            <nav class="header__nav" data-nav>
                 <ul class="header__nav_list">
                     <li class="header__nav_item">
                         <a href="#" class="header__nav_link">Программы</a>
@@ -53,6 +53,9 @@
                     </li>
                 </ul>
             </nav>
+            <button class="burger" data-burger aria-label="Открыть меню" aria-expanded="false">
+                <span class="burger__line"></span>
+            </button>
         </div>
     </header>
     <main class="content">
@@ -67,6 +70,7 @@
                 <img class="page-404__bg" src="./image/404.png" alt="">
             </div>
         </div>
+        <div class="overlay-nav"></div>
     </main>
     <footer class="footer footer-404">
         <div class="footer__container">
@@ -106,12 +110,13 @@
                     <p class="footer__cta_p2">На Grand Role Play</p>
                     <p class="footer__cta_time">Осталось ....</p>
                 </div>
-                <div class="cta__btn">
-                    <a href="#" class="cta__link">Создать Персонажа</a>
-                </div>
+                <a href="#" class="cta__btn footer-btn">Создать Персонажа</a>
             </section>
         </div>
     </footer>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/graph-modal.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

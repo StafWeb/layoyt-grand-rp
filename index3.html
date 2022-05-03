@@ -25,8 +25,8 @@
             <form class="header__form" action="/">
                 <input type="text" class="header__form_search" placeholder="Поиск">
             </form>
-            <nav class="header__nav">
-                <ul class="header__nav_list">
+            <nav class="header__nav" data-nav>
+                <ul class="header__nav_list" >
                     <li class="header__nav_item">
                         <a href="#" class="header__nav_link">Программы</a>
                     </li>
@@ -53,6 +53,9 @@
                     </li>
                 </ul>
             </nav>
+            <button class="burger" data-burger aria-label="Открыть меню" aria-expanded="false">
+                <span class="burger__line"></span>
+            </button>
         </div>
     </header>
     <main class="content single-content">
@@ -74,7 +77,7 @@
                 <div class="guide__title">
                     <h1>Как быстро заработать в GTA</h1>
                 </div>
-                <article class="guide__post">
+                <a href="./single.html" class="guide__post">
                     <img src="./image/card1.png" alt="" class="guide__img">
                         <div class="guide__descr">
                             <h2 class="guide__desct_title">Как поставить тюнинг</h2>
@@ -85,8 +88,8 @@
                                 <time class="guide__descr_time" datetime="2021-03-12">12 марта 2021</time>
                             </div>
                         </div>
-                </article>
-                <article class="guide__post">
+                </a>
+                <a href="./single.html" class="guide__post">
                     <img src="./image/card1.png" alt="" class="guide__img">
                         <div class="guide__descr">
                             <h2 class="guide__desct_title">Как поставить тюнинг</h2>
@@ -96,8 +99,9 @@
                                 <span class="guide__descr_span">Тюннинг</span>
                                 <time class="guide__descr_time" datetime="2021-03-12">12 марта 2021</time>
                             </div>
+                            <!-- <div class="guide__gradient"></div> -->
                         </div>
-                </article>
+                </a>
                 <div class="guide__pagination pagination">
                     <span class="page-numbers page-numbers--active">1</span>
                     <a class="page-numbers" href="#">2</a>
@@ -106,6 +110,7 @@
                 </div>
             </section>
         </div>
+        <div class="overlay-nav"></div>
     </main>
     <footer class="footer">
         <div class="footer__container">
@@ -145,12 +150,13 @@
                     <p class="footer__cta_p2">На Grand Role Play</p>
                     <p class="footer__cta_time">Осталось ....</p>
                 </div>
-                <div class="cta__btn">
-                    <a href="#" class="cta__link">Создать Персонажа</a>
-                </div>
+                <a href="#" class="cta__btn footer-btn">Создать Персонажа</a>
             </section>
         </div>
     </footer>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/graph-modal.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

@@ -26,7 +26,7 @@
                 <input type="text" class="header__form_search" placeholder="Поиск">
             </form>
             <nav class="header__nav" data-nav>
-                <ul class="header__nav_list" >
+                <ul class="header__nav_list">
                     <li class="header__nav_item">
                         <a href="#" class="header__nav_link">Программы</a>
                     </li>
@@ -66,6 +66,15 @@
                         <a href="#" class="bread__crumbs_link">Главная</a>
                     </li>
                     <li class="bread__crumbs_item">
+                        <a href="#" class="bread__crumbs_link">Главная</a>
+                    </li>
+                    <li class="bread__crumbs_item">
+                        <a href="#" class="bread__crumbs_link">Главная</a>
+                    </li>
+                    <li class="bread__crumbs_item">
+                        <a href="#" class="bread__crumbs_link">Главная</a>
+                    </li>
+                    <li class="bread__crumbs_item">
                         <a href="#" class="bread__crumbs_link">Автомобили</a>
                     </li>
                     <li class="bread__crumbs_item">
@@ -87,9 +96,9 @@
                         <h2 class="cta__title">в такую gta ты еще не играл</h2>
                         <p class="cta__p">глобальные игровые системы, простое управление, полное погружение</p>
                     </div>
-                    <div class="cta__btn">
-                        <a href="#" class="cta__link">Создать Персонажа</a>
-                    </div>
+                    <a href="#" class="cta__btn cta-btn">
+                        Создать Персонажа
+                    </a>
                 </div>
             </section>
             <section class="info-car">
@@ -138,42 +147,48 @@
                     <img src="./image/achiv.png" alt="" class="achiv__img">
                 </div>
             </section>
-            <section class="swiper__conteiner">
-                <div class="swiper-head">
+            <section class="swiper-block">
+                <div class="swiper-block__head">
                     <div class="swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img class="swiper-slide__img" src="./image/bg-slider.png" alt="">
                                 <div class="swiper-slide__caption">
-                                    <h4 class="swiper-slide__title">О проекте</h4>
-                                    <p class="swiper-slide__text">за 2 минуты</p>
+                                    <div class="swiper-slide__text">
+                                        <h4 class="swiper-slide__title">О проекте</h4>
+                                        <p class="swiper-slide__p">за 2 минуты</p>
+                                    </div>
+                                    <button class="swiper-slide__btn" data-graph-path="first"></button>
                                 </div>
-                                <button class="swiper-slide__btn" data-graph-path="first"></button>
                             </div>
                             <div class="swiper-slide">
-                                <img class="swiper-slide__img" src="./image/card3.png" alt="">
+                                <img class="swiper-slide__img" src="./image/bg-slider.png" alt="">
                                 <div class="swiper-slide__caption">
-                                    <h4 class="swiper-slide__title">О проекте</h4>
-                                    <p class="swiper-slide__text">за 2 минуты</p>
+                                    <div class="swiper-slide__text">
+                                        <h4 class="swiper-slide__title">О проекте</h4>
+                                        <p class="swiper-slide__p">за 2 минуты</p>
+                                    </div>
+                                    <button class="swiper-slide__btn" data-graph-path="second"></button>
                                 </div>
-                                <button class="swiper-slide__btn btn" data-graph-path="second"></button>
                             </div>
                             <div class="swiper-slide">
-                                <img class="swiper-slide__img" src="./image/videos-slider-2.jpeg" alt="">
+                                <img class="swiper-slide__img" src="./image/bg-slider.png" alt="">
                                 <div class="swiper-slide__caption">
-                                    <h4 class="swiper-slide__title">О проекте</h4>
-                                    <p class="swiper-slide__text">за 2 минуты</p>
+                                    <div class="swiper-slide__text">
+                                        <h4 class="swiper-slide__title">О проекте</h4>
+                                        <p class="swiper-slide__p">за 2 минуты</p>
+                                    </div>
+                                    <button class="swiper-slide__btn" data-graph-path="third"></button>
                                 </div>
-                                <button class="swiper-slide__btn" data-graph-path="first"></button>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper__descr">
-                        <h3 class="swiper__descr_title">Grand role play <span>gta v</span></h3>
-                        <a href="" class="swiper__descr_link">Как начать играть</a>
-                    </div>
                 </div>
-                <div class="swiper-bottom">
+                <div class="swiper-block__descr">
+                    <h3 class="swiper__descr_title">Grand role play <span>gta v</span></h3>
+                    <a href="#" class="swiper__descr_link">Как начать играть</a>
+                </div>
+                <div class="swiper-block__bottom">
                     <div class="swiper-pagination">
                         <span class="swiper-pagination-bullet"></span>
                     </div>
@@ -181,21 +196,34 @@
                 </div>
                 <div class="graph-modal">
                     <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="first">
-                        <button class="btn-reset graph-modal__close js-modal-close btn-close"
+                        <button class="btn-reset graph-modal__close js-modal-close"
                             aria-label="Закрыть модальное окно"></button>
                         <div class="graph-modal__content">
-                                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/9kUKTGoroKk"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
+                            <iframe class="modal__video" width="560" height="315"
+                                src="https://www.youtube.com/embed/9kUKTGoroKk" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
                     <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="second">
                         <button class="btn-reset graph-modal__close js-modal-close"
                             aria-label="Закрыть модальное окно"></button>
                         <div class="graph-modal__content">
-                            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/6CcDcAXoV-8"
-                                title="YouTube video player" frameborder="0"
+                            <iframe class="modal__video" width="560" height="315"
+                                src="https://www.youtube.com/embed/6CcDcAXoV-8" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="third">
+                        <button class="btn-reset graph-modal__close js-modal-close"
+                            aria-label="Закрыть модальное окно"></button>
+                        <div class="graph-modal__content">
+                            <iframe class="modal__video" width="560" height="315"
+                                src="https://www.youtube.com/embed/qXrHnB9-oDk" title="YouTube video player"
+                                frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
                         </div>
@@ -206,9 +234,6 @@
         <div class="overlay-nav"></div>
     </main>
     <footer class="footer">
-        <div id="modal-youtube" class="modais" data-izimodal-autoopen data-izimodal-transitionin="fadeInDown"
-            data-izimodal-title="Youtube"
-            data-izimodal-iframeURL="https://www.youtube.com/embed/1G4isv_Fylg?autoplay=1"></div>
         <div class="footer__container">
             <section class="footer__head">
                 <img src="./image/footer-log.svg" alt="" class="footer__head-log">
@@ -246,9 +271,7 @@
                     <p class="footer__cta_p2">На Grand Role Play</p>
                     <p class="footer__cta_time">Осталось ....</p>
                 </div>
-                <div class="cta__btn">
-                    <a href="#" class="cta__link">Создать Персонажа</a>
-                </div>
+                <a href="#" class="cta__btn footer-btn">Создать Персонажа</a>
             </section>
         </div>
     </footer>

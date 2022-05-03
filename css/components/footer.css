@@ -5,11 +5,6 @@
     background-repeat: no-repeat;
     background-position: right bottom;
 }
-@media (max-width: 1500px){
-    .footer{
-        background-size: 900px;
-    }
-}
 
 .footer-404{
     margin-top: 0;
@@ -32,24 +27,11 @@
     width: 142px;
     height: 42px;
 }
-.header__lang {
-}
+
 .footer_lang {
     margin: 0px;
     margin-left: 38px;
     align-items: center;
-}
-
-.footer__lang_btn {
-}
-
-.footer__lang_list {
-}
-
-.footer__lang_item {
-}
-
-.footer__lang_img {
 }
 
 .footer__head_info {
@@ -71,8 +53,7 @@
 .footer__nav_group:not(:last-child) {
     margin-right: 100px;
 }
-.footer__nav_list {
-}
+
 .footer__nav_item:not(:last-child) {
     margin-bottom: 18px;
 }
@@ -121,21 +102,31 @@
     
 }
 .cta__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 259px;
     height: 66px;
-    background: #ffde2a;
-    box-shadow: 0px 0px 200px #ffde2a;
-    padding-top: 22px;
-}
-.cta__link {
-    display: block;
-    text-align: center;
     font-family: 'PT Sans', serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 120%;
     text-transform: uppercase;
     color: #161323;
+    background: #ffde2a;
+    box-shadow: 0px 0px 200px #ffde2a;
+    transition: 0.5s;
+}
+.cta__btn:hover{
+    box-shadow: 0px 0px 200px #9d9a88;
+    color: #ffffff;
+    transition: 0.3s ease-in;
+}
+
+@media (max-width: 1500px){
+    .footer{
+        background-size: 900px;
+    }
 }
 
 @media (max-width: 1249px){
@@ -167,7 +158,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    .cta__btn{
+    .footer-btn{
         justify-self: end;
         align-self: center;
     }
@@ -188,17 +179,39 @@
      .footer__cta_time{
          font-size: 15px;
      }
-     .cta__btn{
-         display: grid;
+     .footer-btn{
          width: 180px;
          height: 50px;
          padding: 0;
-     }
-     .cta__link{
-         align-self: center;
          font-size: 15px;
      }
      .footer__nav{
          margin: 0;
      }
+ }
+
+ @media (max-width: 556px){
+    .footer__container{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer__head{
+        align-self: center;
+    }
+    .footer__nav{
+        justify-content: center;
+    }
+    .footer__cta{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer__cta_bonus{
+        align-self: center;
+    }
+    .footer__cta_p1,
+    .footer__cta_time{
+        text-align: center;
+    }
  }

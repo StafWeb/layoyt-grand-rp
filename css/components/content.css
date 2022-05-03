@@ -20,6 +20,11 @@
 
 .bread__crumbs_list {
     display: flex;
+    overflow: auto hidden;
+    white-space: nowrap;
+}
+.bread__crumbs_list::-webkit-scrollbar{
+    height: 0;
 }
 .bread__crumbs_item {
     position: relative;
@@ -27,7 +32,7 @@
 }
 
 .bread__crumbs_item:not(:last-child){
-    margin-right: 58px;
+    margin-right: 35px;
 }
 
 .bread__crumbs_item:not(:first-child)::before{
@@ -41,7 +46,24 @@
 }
 
 .bread__crumbs_link {
-    color: #ffffff;
+    background: #ffffff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background 0.8s ease-in;
+    
+}
+
+.bread__crumbs_link:hover{
+    background: linear-gradient(90deg, #ACD685 0%, #56851F 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background 0.8s ease-in;
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+.bread__crumbs_link:active{
+    opacity: 0.6;
+    transition: opacity 0.2s;
 }
 
 .bread__crumbs_span{
@@ -58,7 +80,7 @@
     align-items: end;
 }
 .content__head_title {
-    max-width: 542px;
+    max-width: 500px;
     margin: 50px;
 }
 .content__head_title h3,
@@ -73,16 +95,15 @@
 }
 
 .content__head_btn {
+    display: grid;
     width: 70px;
     height: 70px;
     background-color: black;
     margin: 38px;
-    position: relative;
 }
 .content__head_btn-span {
-    position: absolute;
-    left: 20px;
-    top: 27px;
+    justify-self: center;
+    align-self: center;
     width: 29px;
     height: 17px;
     background: url(../../image/btn-right.svg) no-repeat center / cover;
@@ -128,6 +149,15 @@
     background: url(../../image/diamond.png) no-repeat center / cover;
 }
 
+@media (max-width: 899px){
+    .cta__block{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+}
+
 @media (max-width: 810px){
     .content__bg{
         height: 255px;
@@ -135,5 +165,54 @@
     .content__head_title h3,
     .content__head_title h1{
         font-size: 50px;
+    }
+}
+@media (max-width: 556px){
+    .content__bg{
+        padding: 20px;
+    }
+    .content__head_title{
+        margin: 0;
+    }
+    .content__head_btn{
+        width: 60px;
+        height: 60px;
+    }
+    .content__head_title h3,
+    .content__head_title h1{
+        font-size: 30px;
+    }
+    .content__head_btn{
+        margin: 0;
+    }
+    .cta-btn{
+        position: absolute;
+        font-size: 14px !important;
+        bottom: 20px;
+        left: 30px;
+        width: 150px !important;
+        height: 48px !important;
+    }
+    .cta__title{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 425px){
+    .cta__block{
+        padding: 20px 0 20px;
+    }
+    .cta__block::before{
+        display: none;
+    }
+    .cta__text{
+        justify-self: center;
+        text-align: center;
+    }
+    .cta-btn{
+        position: inherit;
+        bottom: 0;
+        left: 0;
+        justify-self: center;
     }
 }
