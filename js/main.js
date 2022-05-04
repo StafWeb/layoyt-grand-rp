@@ -31,6 +31,19 @@ window.addEventListener('click', function (event) {
     }
 
 });
+
+let heart = document.querySelector('.stats__like');
+let likesNumber = document.querySelector('.stats__like_numb');
+
+heart.onclick = function () {
+  if (heart.classList.contains('like')) {
+    likesNumber.textContent--;
+  } else {
+    likesNumber.textContent++;
+  }
+  heart.classList.toggle('like');
+};
+
 const swiper = new Swiper('.swiper', {
     pagination: {
         el: '.swiper-pagination',

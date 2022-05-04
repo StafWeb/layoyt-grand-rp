@@ -32,13 +32,20 @@
     margin-bottom: 16px;
 }
 .stats__like {
-    background: url(../../image/heart.svg) no-repeat left center / cover;
-    background-size: 18px 16.93px;
+    cursor: pointer;
+    background: url(../../image/heart.svg) no-repeat left center;
+    object-fit: cover;
     padding-left: 32px;
     width: 20px;
     height: 20px;
     opacity: 0.4;
+    transition: 0.3s;
 }
+.stats__like.like{
+    opacity: 1;
+    transition: 0.3s;
+}
+
 .stats__like_numb {
     font-weight: 400;
     font-size: 18px;
