@@ -8,13 +8,13 @@
 }
 
 a, a:visited{
-    /* color: #ffffff; */
+
     text-decoration: none;
 }
 
 a:hover,
 a:active{
-    color: inherit;
+
     outline: none;
 }
 
