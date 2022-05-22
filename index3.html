@@ -2,168 +2,175 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Document</title>
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__container">
-            <div class="header__logo">
-                <img class="header__logo_img" src="./image/log-header.svg" alt="">
-            </div>
-            <div class="header__lang">
-                <button class="header__lang-btn" data-lang="btn-lang"></button>
-                <ul class="header__lang_list">
-                    <li class="header__lang_item"><img src="./image/flag-lang.svg" alt="" class="header__lang_img">
-                        <ul class="lang_list">
-                            <li class="lang_list__item"><a href="#">EN</a></li>
-                            <li class="lang_list__item"><a href="#">GER</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <form class="header__form" action="/">
-                <input type="text" class="header__form_search" placeholder="Поиск">
-            </form>
-            <nav class="header__nav" data-nav>
-                <ul class="header__nav_list" >
-                    <li class="header__nav_item">
-                        <a href="#" class="header__nav_link">Программы</a>
-                    </li>
-                    <li class="header__nav_item">
-                        <a href="#" class="header__nav_link">Раскраски</a>
-                    </li>
-                    <li class="header__nav_item">
-                        <a href="#" class="header__nav_link">Оружие</a>
-                    </li>
-                    <li class="header__nav_item">
-                        <a href="#" class="header__nav_link">Скрипты</a>
-                    </li>
-                    <li class="header__nav_item">
-                        <a href="#" class="header__nav_link">Игрок</a>
-                    </li>
-                    <li class="header__nav_item">
-                        <a href="#" class="header__nav_link">Карта</a>
-                    </li>
-                    <li class="header__nav_item">
-                        <a href="#" class="header__nav_link">Разное</a>
-                    </li>
-                    <li class="header__nav_item">
-                        <a href="#" class="header__nav_link">Больше</a>
-                    </li>
-                </ul>
-            </nav>
-            <button class="burger" data-burger aria-label="Открыть меню" aria-expanded="false">
-                <span class="burger__line"></span>
-            </button>
+  <header class="header">
+    <div class="header__container">
+      <div class="header__logo">
+        <img class="header__logo_img" src="./image/log-header.svg" alt="" />
+      </div>
+      <div class="header__lang">
+        <button class="header__lang-btn" data-lang="btn-lang"></button>
+        <ul class="header__lang_list">
+          <li class="header__lang_item">
+            <img src="./image/flag-lang.svg" alt="" class="header__lang_img" />
+            <ul class="lang_list">
+              <li class="lang_list__item"><a href="#">EN</a></li>
+              <li class="lang_list__item"><a href="#">GER</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <form class="header__form" action="/">
+        <input type="text" class="header__form_search" placeholder="Поиск" />
+      </form>
+      <nav class="header__nav" data-nav>
+        <ul class="header__nav_list">
+          <li class="header__nav_item">
+            <a href="#" class="header__nav_link">Программы</a>
+          </li>
+          <li class="header__nav_item">
+            <a href="#" class="header__nav_link">Раскраски</a>
+          </li>
+          <li class="header__nav_item">
+            <a href="#" class="header__nav_link">Оружие</a>
+          </li>
+          <li class="header__nav_item">
+            <a href="#" class="header__nav_link">Скрипты</a>
+          </li>
+          <li class="header__nav_item">
+            <a href="#" class="header__nav_link">Игрок</a>
+          </li>
+          <li class="header__nav_item">
+            <a href="#" class="header__nav_link">Карта</a>
+          </li>
+          <li class="header__nav_item">
+            <a href="#" class="header__nav_link">Разное</a>
+          </li>
+          <li class="header__nav_item">
+            <a href="#" class="header__nav_link">Больше</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="burger" data-burger aria-label="Открыть меню" aria-expanded="false">
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </header>
+  <main class="content single-content">
+    <div class="conteiner-content">
+      <div class="bread__crumbs">
+        <ul class="bread__crumbs_list">
+          <li class="bread__crumbs_item">
+            <a href="#" class="bread__crumbs_link">Главная</a>
+          </li>
+          <li class="bread__crumbs_item">
+            <a href="#" class="bread__crumbs_link">Автомобили</a>
+          </li>
+          <li class="bread__crumbs_item">
+            <span class="bread__crumbs_span"> Новые автомобили в игре</span>
+          </li>
+        </ul>
+      </div>
+      <section class="guide">
+        <div class="guide__title">
+          <h1>Как быстро заработать в GTA</h1>
         </div>
-    </header>
-    <main class="content single-content">
-        <div class="conteiner-content">
-            <div class="bread__crumbs">
-                <ul class="bread__crumbs_list">
-                    <li class="bread__crumbs_item">
-                        <a href="#" class="bread__crumbs_link">Главная</a>
-                    </li>
-                    <li class="bread__crumbs_item">
-                        <a href="#" class="bread__crumbs_link">Автомобили</a>
-                    </li>
-                    <li class="bread__crumbs_item">
-                        <span class="bread__crumbs_span"> Новые автомобили в игре</span>
-                    </li>
-                </ul>
+        <a href="./single.html" class="guide__post">
+          <img src="./image/card1.png" alt="" class="guide__img" />
+          <div class="guide__descr">
+            <h2 class="guide__desct_title">Как поставить тюнинг</h2>
+            <p class="guide__descr_text">
+              Товарищи! реализация намеченных плановых заданий требуют
+              определения и уточнения модели развития. Разнообразный...
+            </p>
+            <div class="guide__descr_class">
+              <span class="guide__descr_span">Тюннинг</span>
+              <time class="guide__descr_time" datetime="2021-03-12">12 марта 2021</time>
             </div>
-            <section class="guide">
-                <div class="guide__title">
-                    <h1>Как быстро заработать в GTA</h1>
-                </div>
-                <a href="./single.html" class="guide__post">
-                    <img src="./image/card1.png" alt="" class="guide__img">
-                        <div class="guide__descr">
-                            <h2 class="guide__desct_title">Как поставить тюнинг</h2>
-                            <p class="guide__descr_text">Товарищи! реализация намеченных плановых заданий требуют
-                                определения и уточнения модели развития. Разнообразный...</p>
-                            <div class="guide__descr_class">
-                                <span class="guide__descr_span">Тюннинг</span>
-                                <time class="guide__descr_time" datetime="2021-03-12">12 марта 2021</time>
-                            </div>
-                        </div>
-                </a>
-                <a href="./single.html" class="guide__post">
-                    <img src="./image/card1.png" alt="" class="guide__img">
-                        <div class="guide__descr">
-                            <h2 class="guide__desct_title">Как поставить тюнинг</h2>
-                            <p class="guide__descr_text">Товарищи! реализация намеченных плановых заданий требуют
-                                определения и уточнения модели развития. Разнообразный...</p>
-                            <div class="guide__descr_class">
-                                <span class="guide__descr_span">Тюннинг</span>
-                                <time class="guide__descr_time" datetime="2021-03-12">12 марта 2021</time>
-                            </div>
-                            <!-- <div class="guide__gradient"></div> -->
-                        </div>
-                </a>
-                <div class="guide__pagination pagination">
-                    <span class="page-numbers page-numbers--active">1</span>
-                    <a class="page-numbers" href="#">2</a>
-                    <a class="page-numbers" href="#">3</a>
-                    <a class="page-numbers" href="#">>></a>
-                </div>
-            </section>
+          </div>
+        </a>
+        <a href="./single.html" class="guide__post">
+          <img src="./image/card1.png" alt="" class="guide__img" />
+          <div class="guide__descr">
+            <h2 class="guide__desct_title">Как поставить тюнинг</h2>
+            <p class="guide__descr_text">
+              Товарищи! реализация намеченных плановых заданий требуют
+              определения и уточнения модели развития. Разнообразный...
+            </p>
+            <div class="guide__descr_class">
+              <span class="guide__descr_span">Тюннинг</span>
+              <time class="guide__descr_time" datetime="2021-03-12">12 марта 2021</time>
+            </div>
+          </div>
+        </a>
+        <div class="guide__pagination pagination">
+          <span class="page-numbers page-numbers--active">1</span>
+          <a class="page-numbers" href="#">2</a>
+          <a class="page-numbers" href="#">3</a>
+          <a class="page-numbers" href="#">>></a>
         </div>
-        <div class="overlay-nav"></div>
-    </main>
-    <footer class="footer">
-        <div class="footer__container">
-            <section class="footer__head">
-                <img src="./image/footer-log.svg" alt="" class="footer__head-log">
-                <div class="header__lang footer_lang">
-                    <button class="header__lang-btn footer__lang_btn" data-lang="btn-lang"></button>
-                    <ul class="header__lang_list">
-                        <li class="header__lang_item"><img src="./image/flag-lang.svg" alt="" class="header__lang_img">
-                            <ul class="lang_list">
-                                <li class="lang_list__item"><a href="#">EN</a></li>
-                                <li class="lang_list__item"><a href="#">GER</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <p class="footer__head_info">Информационная база по Grand Thief Auto V</p>
-            </section>
-            <section class="footer__nav">
-                <div class="footer__nav_group">
-                    <ul class="footer__nav_list">
-                        <li class="footer__nav_item"><a href="#">Программы</a></li>
-                        <li class="footer__nav_item"><a href="#">Раскраски</a></li>
-                        <li class="footer__nav_item"><a href="#">Оружие</a></li>
-                        <li class="footer__nav_item"><a href="#">Скрипты</a></li>
-                    </ul>
-                </div>
-                <div class="footer__nav_group">
-                    <ul class="footer__nav_list">
-                        <li class="footer__nav_item"><a href="#">Игрок</a></li>
-                        <li class="footer__nav_item"><a href="#">Карта</a></li>
-                        <li class="footer__nav_item"><a href="#">Разное</a></li>
-                        <li class="footer__nav_item"><a href="#">Больше</a></li>
-                    </ul>
-                </div>
-            </section>
-            <section class="footer__cta">
-                <div class="footer__cta_bonus">
-                    <p class="footer__cta_p1">Бонус При Регистрации</p>
-                    <p class="footer__cta_p2">На Grand Role Play</p>
-                    <p class="footer__cta_time">Осталось ....</p>
-                </div>
-                <a href="#" class="cta__btn footer-btn">Создать Персонажа</a>
-            </section>
+      </section>
+    </div>
+    <div class="overlay-nav"></div>
+  </main>
+  <footer class="footer">
+    <div class="footer__container">
+      <section class="footer__head">
+        <img src="./image/footer-log.svg" alt="" class="footer__head-log" />
+        <div class="header__lang footer_lang">
+          <button class="header__lang-btn footer__lang_btn" data-lang="btn-lang"></button>
+          <ul class="header__lang_list">
+            <li class="header__lang_item">
+              <img src="./image/flag-lang.svg" alt="" class="header__lang_img" />
+              <ul class="lang_list">
+                <li class="lang_list__item"><a href="#">EN</a></li>
+                <li class="lang_list__item"><a href="#">GER</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
-    </footer>
-    <script src="./js/swiper-bundle.min.js"></script>
-    <script src="./js/graph-modal.min.js"></script>
-    <script src="./js/main.js"></script>
+        <p class="footer__head_info">
+          Информационная база по Grand Thief Auto V
+        </p>
+      </section>
+      <section class="footer__nav">
+        <div class="footer__nav_group">
+          <ul class="footer__nav_list">
+            <li class="footer__nav_item"><a href="#">Программы</a></li>
+            <li class="footer__nav_item"><a href="#">Раскраски</a></li>
+            <li class="footer__nav_item"><a href="#">Оружие</a></li>
+            <li class="footer__nav_item"><a href="#">Скрипты</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav_group">
+          <ul class="footer__nav_list">
+            <li class="footer__nav_item"><a href="#">Игрок</a></li>
+            <li class="footer__nav_item"><a href="#">Карта</a></li>
+            <li class="footer__nav_item"><a href="#">Разное</a></li>
+            <li class="footer__nav_item"><a href="#">Больше</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="footer__cta">
+        <div class="footer__cta_bonus">
+          <p class="footer__cta_p1">Бонус При Регистрации</p>
+          <p class="footer__cta_p2">На Grand Role Play</p>
+          <p class="footer__cta_time">Осталось ....</p>
+        </div>
+        <a href="#" class="cta__btn footer-btn">Создать Персонажа</a>
+      </section>
+    </div>
+  </footer>
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="./js/graph-modal.min.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

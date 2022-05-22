@@ -2,320 +2,328 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>GTA RP</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>GTA RP</title>
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__container">
-            <div class="header__logo">
-                <img class="header__logo_img" src="./image/log-header.svg" alt="">
-            </div>
-            <div class="header__lang">
-                <button class="header__lang-btn" data-lang="btn-lang"></button>
-                <ul class="header__lang_list">
-                    <li class="header__lang_item"><img src="./image/flag-lang.svg" alt="" class="header__lang_img">
-                        <ul class="lang_list">
-                            <li class="lang_list__item"><a href="#">EN</a></li>
-                            <li class="lang_list__item"><a href="#">GER</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <form class="header__form" action="/">
-                <input type="text" class="header__form_search" placeholder="Поиск">
-            </form>
-            <nav class="header__nav" data-nav>
-                <ul class="header__nav_list">
-                    <li class="header__nav_item">
-                        <a href="#" class="header__nav_link">Программы</a>
-                    </li>
-                    <li class="header__nav_item">
-                        <a href="#" class="header__nav_link">Раскраски</a>
-                    </li>
-                    <li class="header__nav_item">
-                        <a href="#" class="header__nav_link">Оружие</a>
-                    </li>
-                    <li class="header__nav_item">
-                        <a href="#" class="header__nav_link">Скрипты</a>
-                    </li>
-                    <li class="header__nav_item">
-                        <a href="#" class="header__nav_link">Игрок</a>
-                    </li>
-                    <li class="header__nav_item">
-                        <a href="#" class="header__nav_link">Карта</a>
-                    </li>
-                    <li class="header__nav_item">
-                        <a href="#" class="header__nav_link">Разное</a>
-                    </li>
-                    <li class="header__nav_item">
-                        <a href="#" class="header__nav_link">Больше</a>
-                    </li>
-                </ul>
-            </nav>
-            <button class="burger" data-burger aria-label="Открыть меню" aria-expanded="false">
-                <span class="burger__line"></span>
-            </button>
+  <header class="header">
+    <div class="header__container">
+      <div class="header__logo">
+        <img class="header__logo_img" src="./image/log-header.svg" alt="" />
+      </div>
+      <div class="header__lang">
+        <button class="header__lang-btn" data-lang="btn-lang"></button>
+        <ul class="header__lang_list">
+          <li class="header__lang_item">
+            <img src="./image/flag-lang.svg" alt="" class="header__lang_img" />
+            <ul class="lang_list">
+              <li class="lang_list__item"><a href="#">EN</a></li>
+              <li class="lang_list__item"><a href="#">GER</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <form class="header__form" action="/">
+        <input type="text" class="header__form_search" placeholder="Поиск" />
+      </form>
+      <nav class="header__nav" data-nav>
+        <ul class="header__nav_list">
+          <li class="header__nav_item">
+            <a href="#" class="header__nav_link">Программы</a>
+          </li>
+          <li class="header__nav_item">
+            <a href="#" class="header__nav_link">Раскраски</a>
+          </li>
+          <li class="header__nav_item">
+            <a href="#" class="header__nav_link">Оружие</a>
+          </li>
+          <li class="header__nav_item">
+            <a href="#" class="header__nav_link">Скрипты</a>
+          </li>
+          <li class="header__nav_item">
+            <a href="#" class="header__nav_link">Игрок</a>
+          </li>
+          <li class="header__nav_item">
+            <a href="#" class="header__nav_link">Карта</a>
+          </li>
+          <li class="header__nav_item">
+            <a href="#" class="header__nav_link">Разное</a>
+          </li>
+          <li class="header__nav_item">
+            <a href="#" class="header__nav_link">Больше</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="burger" data-burger aria-label="Открыть меню" aria-expanded="false">
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </header>
+  <main class="content main_content">
+    <div class="conteiner-content">
+      <div class="content__bg" style="
+						background: url(./image/content-head.png) no-repeat center / cover;
+					">
+        <div class="content__head_title">
+          <h3>Новые Автомобили в Игре</h3>
         </div>
-    </header>
-    <main class="content main_content">
-        <div class="conteiner-content">
-            <div class="content__bg" style="background: url(./image/content-head.png) no-repeat center / cover;">
-                <div class="content__head_title">
-                    <h3>Новые Автомобили в Игре</h3>
-                </div>
-                <a href="./single.html">
-                    <button class="content__head_btn"><span class="content__head_btn-span"></span></button>
-                </a>
-            </div>
-            <section class="content__post">
-                <a href="#" class="content__card">
-                    <img class="content__card_img" src="./image/card1.png" alt="">
-                    <div class="content__card_title">
-                        <h4 class="content__card_title-h4">Как поставить тюнинг</h4>
-                    </div>
-                    <div class="content__card_info">
-                        <span class="content__card_info-span">Тюннинг</span>
-                        <time datetime="2021-03-12" class="content__card_info-date">12 марта 2021</time>
-                    </div>
-                </a>
-                <a href="#" class="content__card">
-                    <img class="content__card_img" src="./image/card1.png" alt="">
-                    <div class="content__card_title">
-                        <h4 class="content__card_title-h4">Как поставить тюнинг</h4>
-                    </div>
-                    <div class="content__card_info">
-                        <span class="content__card_info-span">Тюннинг</span>
-                        <time datetime="2021-03-12" class="content__card_info-date">12 марта 2021</time>
-                    </div>
-                </a>
-                <a href="#" class="content__card">
-                    <img class="content__card_img" src="./image/card1.png" alt="">
-                    <div class="content__card_title">
-                        <h4 class="content__card_title-h4">Как поставить тюнинг</h4>
-                    </div>
-                    <div class="content__card_info">
-                        <span class="content__card_info-span">Тюннинг</span>
-                        <time datetime="2021-03-12" class="content__card_info-date">12 марта 2021</time>
-                    </div>
-                </a>
-                <a href="#" class="content__card">
-                    <img class="content__card_img" src="./image/card1.png" alt="">
-                    <div class="content__card_title">
-                        <h4 class="content__card_title-h4">Как поставить тюнинг</h4>
-                    </div>
-                    <div class="content__card_info">
-                        <span class="content__card_info-span">Тюннинг</span>
-                        <time datetime="2021-03-12" class="content__card_info-date">12 марта 2021</time>
-                    </div>
-                </a>
-                <a href="#" class="content__card">
-                    <img class="content__card_img" src="./image/card1.png" alt="">
-                    <div class="content__card_title">
-                        <h4 class="content__card_title-h4">Как поставить тюнинг</h4>
-                    </div>
-                    <div class="content__card_info">
-                        <span class="content__card_info-span">Тюннинг</span>
-                        <time datetime="2021-03-12" class="content__card_info-date">12 марта 2021</time>
-                    </div>
-                </a>
-                <a href="#" class="content__card">
-                    <img class="content__card_img" src="./image/card1.png" alt="">
-                    <div class="content__card_title">
-                        <h4 class="content__card_title-h4">Как поставить тюнинг</h4>
-                    </div>
-                    <div class="content__card_info">
-                        <span class="content__card_info-span">Тюннинг</span>
-                        <time datetime="2021-03-12" class="content__card_info-date">12 марта 2021</time>
-                    </div>
-                </a>
-            </section>
-            <section class="category">
-                <div class="сategory__title">
-                    <span class="category__title-span"></span>
-                    <h2 class="сategory__title-h">Категории</h2>
-                    <a href="#" class="category__title-link">Все Категории</a>
-                </div>
-                <div class="category__list">
-                    <ul class="category__list-ul">
-                        <li class="category__item" style="background-color: #245470;">
-                            <a href="#" class="category__item-link">
-                                <img src="./image/icon-category.svg" alt="" class="category__item-icon">
-                                Программы</a>
-                        </li>
-                        <li class="category__item" style="background-color: #415F9A;">
-                            <a href="#" class="category__item-link">
-                                <img src="./image/icon-category.svg" alt="" class="category__item-icon">
-                                Программы</a>
-                        </li>
-                        <li class="category__item" style="background-color: #2D469F;">
-                            <a href="#" class="category__item-link">
-                                <img src="./image/icon-category.svg" alt="" class="category__item-icon">
-                                Программы</a>
-                        </li>
-                        <li class="category__item" style="background-color: #3123CD;">
-                            <a href="#" class="category__item-link">
-                                <img src="./image/icon-category.svg" alt="" class="category__item-icon">
-                                Программы</a>
-                        </li>
-                        <li class="category__item" style="background-color: #7653C0;">
-                            <a href="#" class="category__item-link">
-                                <img src="./image/icon-category.svg" alt="" class="category__item-icon">
-                                Программы</a>
-                        </li>
-                        <li class="category__item" style="background-color: #56774A;">
-                            <a href="#" class="category__item-link">
-                                <img src="./image/icon-category.svg" alt="" class="category__item-icon">
-                                Программы</a>
-                        </li>
-                        <li class="category__item" style="background-color: #AF2657;">
-                            <a href="#" class="category__item-link">
-                                <img src="./image/icon-category.svg" alt="" class="category__item-icon">
-                                Программы</a>
-                        </li>
-                        <li class="category__item" style="background-color: #852B66;">
-                            <a href="#" class="category__item-link">
-                                <img src="./image/icon-category.svg" alt="" class="category__item-icon">
-                                Программы</a>
-                        </li>
-                        <li class="category__item" style="background-color: #36464F;">
-                            <a href="#" class="category__item-link">
-                                <img src="./image/icon-category.svg" alt="" class="category__item-icon">
-                                Программы</a>
-                        </li>
-                        <li class="category__item" style="background-color: #45AB8D;">
-                            <a href="#" class="category__item-link">
-                                <img src="./image/icon-category.svg" alt="" class="category__item-icon">
-                                Программы</a>
-                        </li>
-                        <li class="category__item" style="background-color: #A5883E;">
-                            <a href="#" class="category__item-link">
-                                <img src="./image/icon-category.svg" alt="" class="category__item-icon">
-                                Программы</a>
-                        </li>
-                        <li class="category__item" style="background-color: #9C5454;">
-                            <a href="#" class="category__item-link">
-                                <img src="./image/icon-category.svg" alt="" class="category__item-icon">
-                                Программы</a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section class="content__post">
-                <a href="#" class="content__card">
-                    <img class="content__card_img" src="./image/card1.png" alt="">
-                    <div class="content__card_title">
-                        <h4 class="content__card_title-h4">Как поставить тюнинг</h4>
-                    </div>
-                    <div class="content__card_info">
-                        <span class="content__card_info-span">Тюннинг</span>
-                        <time datetime="2021-03-12" class="content__card_info-date">12 марта 2021</time>
-                    </div>
-                </a>
-                <a href="#" class="content__card">
-                    <img class="content__card_img" src="./image/card1.png" alt="">
-                    <div class="content__card_title">
-                        <h4 class="content__card_title-h4">Как поставить тюнинг</h4>
-                    </div>
-                    <div class="content__card_info">
-                        <span class="content__card_info-span">Тюннинг</span>
-                        <time datetime="2021-03-12" class="content__card_info-date">12 марта 2021</time>
-                    </div>
-                </a>
-                <a href="#" class="content__card">
-                    <img class="content__card_img" src="./image/card1.png" alt="">
-                    <div class="content__card_title">
-                        <h4 class="content__card_title-h4">Как поставить тюнинг</h4>
-                    </div>
-                    <div class="content__card_info">
-                        <span class="content__card_info-span">Тюннинг</span>
-                        <time datetime="2021-03-12" class="content__card_info-date">12 марта 2021</time>
-                    </div>
-                </a>
-                <a href="#" class="content__card">
-                    <img class="content__card_img" src="./image/card1.png" alt="">
-                    <div class="content__card_title">
-                        <h4 class="content__card_title-h4">Как поставить тюнинг</h4>
-                    </div>
-                    <div class="content__card_info">
-                        <span class="content__card_info-span">Тюннинг</span>
-                        <time datetime="2021-03-12" class="content__card_info-date">12 марта 2021</time>
-                    </div>
-                </a>
-                <a href="#" class="content__card">
-                    <img class="content__card_img" src="./image/card1.png" alt="">
-                    <div class="content__card_title">
-                        <h4 class="content__card_title-h4">Как поставить тюнинг</h4>
-                    </div>
-                    <div class="content__card_info">
-                        <span class="content__card_info-span">Тюннинг</span>
-                        <time datetime="2021-03-12" class="content__card_info-date">12 марта 2021</time>
-                    </div>
-                </a>
-                <a href="#" class="content__card">
-                    <img class="content__card_img" src="./image/card1.png" alt="">
-                    <div class="content__card_title">
-                        <h4 class="content__card_title-h4">Как поставить тюнинг</h4>
-                    </div>
-                    <div class="content__card_info">
-                        <span class="content__card_info-span">Тюннинг</span>
-                        <time datetime="2021-03-12" class="content__card_info-date">12 марта 2021</time>
-                    </div>
-                </a>
-            </section>
+        <a href="./single.html">
+          <button class="content__head_btn">
+            <span class="content__head_btn-span"></span>
+          </button>
+        </a>
+      </div>
+      <section class="content__post">
+        <a href="#" class="content__card">
+          <img class="content__card_img" src="./image/card1.png" alt="" />
+          <div class="content__card_title">
+            <h4 class="content__card_title-h4">Как поставить тюнинг</h4>
+          </div>
+          <div class="content__card_info">
+            <span class="content__card_info-span">Тюннинг</span>
+            <time datetime="2021-03-12" class="content__card_info-date">12 марта 2021</time>
+          </div>
+        </a>
+        <a href="#" class="content__card">
+          <img class="content__card_img" src="./image/card1.png" alt="" />
+          <div class="content__card_title">
+            <h4 class="content__card_title-h4">Как поставить тюнинг</h4>
+          </div>
+          <div class="content__card_info">
+            <span class="content__card_info-span">Тюннинг</span>
+            <time datetime="2021-03-12" class="content__card_info-date">12 марта 2021</time>
+          </div>
+        </a>
+        <a href="#" class="content__card">
+          <img class="content__card_img" src="./image/card1.png" alt="" />
+          <div class="content__card_title">
+            <h4 class="content__card_title-h4">Как поставить тюнинг</h4>
+          </div>
+          <div class="content__card_info">
+            <span class="content__card_info-span">Тюннинг</span>
+            <time datetime="2021-03-12" class="content__card_info-date">12 марта 2021</time>
+          </div>
+        </a>
+        <a href="#" class="content__card">
+          <img class="content__card_img" src="./image/card1.png" alt="" />
+          <div class="content__card_title">
+            <h4 class="content__card_title-h4">Как поставить тюнинг</h4>
+          </div>
+          <div class="content__card_info">
+            <span class="content__card_info-span">Тюннинг</span>
+            <time datetime="2021-03-12" class="content__card_info-date">12 марта 2021</time>
+          </div>
+        </a>
+        <a href="#" class="content__card">
+          <img class="content__card_img" src="./image/card1.png" alt="" />
+          <div class="content__card_title">
+            <h4 class="content__card_title-h4">Как поставить тюнинг</h4>
+          </div>
+          <div class="content__card_info">
+            <span class="content__card_info-span">Тюннинг</span>
+            <time datetime="2021-03-12" class="content__card_info-date">12 марта 2021</time>
+          </div>
+        </a>
+        <a href="#" class="content__card">
+          <img class="content__card_img" src="./image/card1.png" alt="" />
+          <div class="content__card_title">
+            <h4 class="content__card_title-h4">Как поставить тюнинг</h4>
+          </div>
+          <div class="content__card_info">
+            <span class="content__card_info-span">Тюннинг</span>
+            <time datetime="2021-03-12" class="content__card_info-date">12 марта 2021</time>
+          </div>
+        </a>
+      </section>
+      <section class="category">
+        <div class="сategory__title">
+          <span class="category__title-span"></span>
+          <h2 class="сategory__title-h">Категории</h2>
+          <a href="#" class="category__title-link">Все Категории</a>
         </div>
-        <div class="overlay-nav"></div>
-    </main>
-    <footer class="footer">
-        <div class="footer__container">
-            <section class="footer__head">
-                <img src="./image/footer-log.svg" alt="" class="footer__head-log">
-                <div class="header__lang footer_lang">
-                    <button class="header__lang-btn footer__lang_btn" data-lang="btn-lang"></button>
-                    <ul class="header__lang_list">
-                        <li class="header__lang_item"><img src="./image/flag-lang.svg" alt="" class="header__lang_img">
-                            <ul class="lang_list">
-                                <li class="lang_list__item"><a href="#">EN</a></li>
-                                <li class="lang_list__item"><a href="#">GER</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <p class="footer__head_info">Информационная база по Grand Thief Auto V</p>
-            </section>
-            <section class="footer__nav">
-                <div class="footer__nav_group">
-                    <ul class="footer__nav_list">
-                        <li class="footer__nav_item"><a href="#">Программы</a></li>
-                        <li class="footer__nav_item"><a href="#">Раскраски</a></li>
-                        <li class="footer__nav_item"><a href="#">Оружие</a></li>
-                        <li class="footer__nav_item"><a href="#">Скрипты</a></li>
-                    </ul>
-                </div>
-                <div class="footer__nav_group">
-                    <ul class="footer__nav_list">
-                        <li class="footer__nav_item"><a href="#">Игрок</a></li>
-                        <li class="footer__nav_item"><a href="#">Карта</a></li>
-                        <li class="footer__nav_item"><a href="#">Разное</a></li>
-                        <li class="footer__nav_item"><a href="#">Больше</a></li>
-                    </ul>
-                </div>
-            </section>
-            <section class="footer__cta">
-                <div class="footer__cta_bonus">
-                    <p class="footer__cta_p1">Бонус При Регистрации</p>
-                    <p class="footer__cta_p2">На Grand Role Play</p>
-                    <p class="footer__cta_time">Осталось ....</p>
-                </div>
-                <a href="#" class="cta__btn footer-btn">Создать Персонажа</a>
-            </section>
+        <div class="category__list">
+          <ul class="category__list-ul">
+            <li class="category__item" style="background-color: #245470">
+              <a href="#" class="category__item-link">
+                <img src="./image/icon-category.svg" alt="" class="category__item-icon" />
+                Программы</a>
+            </li>
+            <li class="category__item" style="background-color: #415f9a">
+              <a href="#" class="category__item-link">
+                <img src="./image/icon-category.svg" alt="" class="category__item-icon" />
+                Программы</a>
+            </li>
+            <li class="category__item" style="background-color: #2d469f">
+              <a href="#" class="category__item-link">
+                <img src="./image/icon-category.svg" alt="" class="category__item-icon" />
+                Программы</a>
+            </li>
+            <li class="category__item" style="background-color: #3123cd">
+              <a href="#" class="category__item-link">
+                <img src="./image/icon-category.svg" alt="" class="category__item-icon" />
+                Программы</a>
+            </li>
+            <li class="category__item" style="background-color: #7653c0">
+              <a href="#" class="category__item-link">
+                <img src="./image/icon-category.svg" alt="" class="category__item-icon" />
+                Программы</a>
+            </li>
+            <li class="category__item" style="background-color: #56774a">
+              <a href="#" class="category__item-link">
+                <img src="./image/icon-category.svg" alt="" class="category__item-icon" />
+                Программы</a>
+            </li>
+            <li class="category__item" style="background-color: #af2657">
+              <a href="#" class="category__item-link">
+                <img src="./image/icon-category.svg" alt="" class="category__item-icon" />
+                Программы</a>
+            </li>
+            <li class="category__item" style="background-color: #852b66">
+              <a href="#" class="category__item-link">
+                <img src="./image/icon-category.svg" alt="" class="category__item-icon" />
+                Программы</a>
+            </li>
+            <li class="category__item" style="background-color: #36464f">
+              <a href="#" class="category__item-link">
+                <img src="./image/icon-category.svg" alt="" class="category__item-icon" />
+                Программы</a>
+            </li>
+            <li class="category__item" style="background-color: #45ab8d">
+              <a href="#" class="category__item-link">
+                <img src="./image/icon-category.svg" alt="" class="category__item-icon" />
+                Программы</a>
+            </li>
+            <li class="category__item" style="background-color: #a5883e">
+              <a href="#" class="category__item-link">
+                <img src="./image/icon-category.svg" alt="" class="category__item-icon" />
+                Программы</a>
+            </li>
+            <li class="category__item" style="background-color: #9c5454">
+              <a href="#" class="category__item-link">
+                <img src="./image/icon-category.svg" alt="" class="category__item-icon" />
+                Программы</a>
+            </li>
+          </ul>
         </div>
-    </footer>
-    <script src="./js/main.js"></script>
+      </section>
+      <section class="content__post">
+        <a href="#" class="content__card">
+          <img class="content__card_img" src="./image/card1.png" alt="" />
+          <div class="content__card_title">
+            <h4 class="content__card_title-h4">Как поставить тюнинг</h4>
+          </div>
+          <div class="content__card_info">
+            <span class="content__card_info-span">Тюннинг</span>
+            <time datetime="2021-03-12" class="content__card_info-date">12 марта 2021</time>
+          </div>
+        </a>
+        <a href="#" class="content__card">
+          <img class="content__card_img" src="./image/card1.png" alt="" />
+          <div class="content__card_title">
+            <h4 class="content__card_title-h4">Как поставить тюнинг</h4>
+          </div>
+          <div class="content__card_info">
+            <span class="content__card_info-span">Тюннинг</span>
+            <time datetime="2021-03-12" class="content__card_info-date">12 марта 2021</time>
+          </div>
+        </a>
+        <a href="#" class="content__card">
+          <img class="content__card_img" src="./image/card1.png" alt="" />
+          <div class="content__card_title">
+            <h4 class="content__card_title-h4">Как поставить тюнинг</h4>
+          </div>
+          <div class="content__card_info">
+            <span class="content__card_info-span">Тюннинг</span>
+            <time datetime="2021-03-12" class="content__card_info-date">12 марта 2021</time>
+          </div>
+        </a>
+        <a href="#" class="content__card">
+          <img class="content__card_img" src="./image/card1.png" alt="" />
+          <div class="content__card_title">
+            <h4 class="content__card_title-h4">Как поставить тюнинг</h4>
+          </div>
+          <div class="content__card_info">
+            <span class="content__card_info-span">Тюннинг</span>
+            <time datetime="2021-03-12" class="content__card_info-date">12 марта 2021</time>
+          </div>
+        </a>
+        <a href="#" class="content__card">
+          <img class="content__card_img" src="./image/card1.png" alt="" />
+          <div class="content__card_title">
+            <h4 class="content__card_title-h4">Как поставить тюнинг</h4>
+          </div>
+          <div class="content__card_info">
+            <span class="content__card_info-span">Тюннинг</span>
+            <time datetime="2021-03-12" class="content__card_info-date">12 марта 2021</time>
+          </div>
+        </a>
+        <a href="#" class="content__card">
+          <img class="content__card_img" src="./image/card1.png" alt="" />
+          <div class="content__card_title">
+            <h4 class="content__card_title-h4">Как поставить тюнинг</h4>
+          </div>
+          <div class="content__card_info">
+            <span class="content__card_info-span">Тюннинг</span>
+            <time datetime="2021-03-12" class="content__card_info-date">12 марта 2021</time>
+          </div>
+        </a>
+      </section>
+    </div>
+    <div class="overlay-nav"></div>
+  </main>
+  <footer class="footer">
+    <div class="footer__container">
+      <section class="footer__head">
+        <img src="./image/footer-log.svg" alt="" class="footer__head-log" />
+        <div class="header__lang footer_lang">
+          <button class="header__lang-btn footer__lang_btn" data-lang="btn-lang"></button>
+          <ul class="header__lang_list">
+            <li class="header__lang_item">
+              <img src="./image/flag-lang.svg" alt="" class="header__lang_img" />
+              <ul class="lang_list">
+                <li class="lang_list__item"><a href="#">EN</a></li>
+                <li class="lang_list__item"><a href="#">GER</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <p class="footer__head_info">
+          Информационная база по Grand Thief Auto V
+        </p>
+      </section>
+      <section class="footer__nav">
+        <div class="footer__nav_group">
+          <ul class="footer__nav_list">
+            <li class="footer__nav_item"><a href="#">Программы</a></li>
+            <li class="footer__nav_item"><a href="#">Раскраски</a></li>
+            <li class="footer__nav_item"><a href="#">Оружие</a></li>
+            <li class="footer__nav_item"><a href="#">Скрипты</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav_group">
+          <ul class="footer__nav_list">
+            <li class="footer__nav_item"><a href="#">Игрок</a></li>
+            <li class="footer__nav_item"><a href="#">Карта</a></li>
+            <li class="footer__nav_item"><a href="#">Разное</a></li>
+            <li class="footer__nav_item"><a href="#">Больше</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="footer__cta">
+        <div class="footer__cta_bonus">
+          <p class="footer__cta_p1">Бонус При Регистрации</p>
+          <p class="footer__cta_p2">На Grand Role Play</p>
+          <p class="footer__cta_time">Осталось ....</p>
+        </div>
+        <a href="#" class="cta__btn footer-btn">Создать Персонажа</a>
+      </section>
+    </div>
+  </footer>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

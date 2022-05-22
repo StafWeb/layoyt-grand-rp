@@ -2,128 +2,134 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>404</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>404</title>
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__container">
-            <div class="header__logo">
-                <img class="header__logo_img" src="./image/log-header.svg" alt="">
-            </div>
-            <div class="header__lang">
-                <button class="header__lang-btn" data-lang="btn-lang"></button>
-                <ul class="header__lang_list">
-                    <li class="header__lang_item"><img src="./image/flag-lang.svg" alt="" class="header__lang_img">
-                        <ul class="lang_list">
-                            <li class="lang_list__item"><a href="#">EN</a></li>
-                            <li class="lang_list__item"><a href="#">GER</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <form class="header__form" action="/">
-                <input type="text" class="header__form_search" placeholder="Поиск">
-            </form>
-            <nav class="header__nav" data-nav>
-                <ul class="header__nav_list">
-                    <li class="header__nav_item">
-                        <a href="#" class="header__nav_link">Программы</a>
-                    </li>
-                    <li class="header__nav_item">
-                        <a href="#" class="header__nav_link">Раскраски</a>
-                    </li>
-                    <li class="header__nav_item">
-                        <a href="#" class="header__nav_link">Оружие</a>
-                    </li>
-                    <li class="header__nav_item">
-                        <a href="#" class="header__nav_link">Скрипты</a>
-                    </li>
-                    <li class="header__nav_item">
-                        <a href="#" class="header__nav_link">Игрок</a>
-                    </li>
-                    <li class="header__nav_item">
-                        <a href="#" class="header__nav_link">Карта</a>
-                    </li>
-                    <li class="header__nav_item">
-                        <a href="#" class="header__nav_link">Разное</a>
-                    </li>
-                    <li class="header__nav_item">
-                        <a href="#" class="header__nav_link">Больше</a>
-                    </li>
-                </ul>
-            </nav>
-            <button class="burger" data-burger aria-label="Открыть меню" aria-expanded="false">
-                <span class="burger__line"></span>
-            </button>
+  <header class="header">
+    <div class="header__container">
+      <div class="header__logo">
+        <img class="header__logo_img" src="./image/log-header.svg" alt="" />
+      </div>
+      <div class="header__lang">
+        <button class="header__lang-btn" data-lang="btn-lang"></button>
+        <ul class="header__lang_list">
+          <li class="header__lang_item">
+            <img src="./image/flag-lang.svg" alt="" class="header__lang_img" />
+            <ul class="lang_list">
+              <li class="lang_list__item"><a href="#">EN</a></li>
+              <li class="lang_list__item"><a href="#">GER</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <form class="header__form" action="/">
+        <input type="text" class="header__form_search" placeholder="Поиск" />
+      </form>
+      <nav class="header__nav" data-nav>
+        <ul class="header__nav_list">
+          <li class="header__nav_item">
+            <a href="#" class="header__nav_link">Программы</a>
+          </li>
+          <li class="header__nav_item">
+            <a href="#" class="header__nav_link">Раскраски</a>
+          </li>
+          <li class="header__nav_item">
+            <a href="#" class="header__nav_link">Оружие</a>
+          </li>
+          <li class="header__nav_item">
+            <a href="#" class="header__nav_link">Скрипты</a>
+          </li>
+          <li class="header__nav_item">
+            <a href="#" class="header__nav_link">Игрок</a>
+          </li>
+          <li class="header__nav_item">
+            <a href="#" class="header__nav_link">Карта</a>
+          </li>
+          <li class="header__nav_item">
+            <a href="#" class="header__nav_link">Разное</a>
+          </li>
+          <li class="header__nav_item">
+            <a href="#" class="header__nav_link">Больше</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="burger" data-burger aria-label="Открыть меню" aria-expanded="false">
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </header>
+  <main class="content">
+    <div class="conteiner-content">
+      <div class="page-404">
+        <div class="page-404__content">
+          <h1 class="page-404__title">
+            Ошибка 404 <br />
+            <span class="page-404__title-span">страница не найдена</span>
+          </h1>
+          <a href="./index.html" class="page-404__link">На главную</a>
         </div>
-    </header>
-    <main class="content">
-        <div class="conteiner-content">
-            <div class="page-404">
-                <div class="page-404__content">
-                    <h1 class="page-404__title">Ошибка 404 <br> <span class="page-404__title-span">страница не
-                            найдена</span></h1>
-                    <a href="./index.html" class="page-404__link">На главную</a>
-                </div>
 
-                <img class="page-404__bg" src="./image/404.png" alt="">
-            </div>
+        <img class="page-404__bg" src="./image/404.png" alt="" />
+      </div>
+    </div>
+    <div class="overlay-nav"></div>
+  </main>
+  <footer class="footer footer-404">
+    <div class="footer__container">
+      <section class="footer__head">
+        <img src="./image/footer-log.svg" alt="" class="footer__head-log" />
+        <div class="header__lang footer_lang">
+          <button class="header__lang-btn footer__lang_btn" data-lang="btn-lang"></button>
+          <ul class="header__lang_list">
+            <li class="header__lang_item">
+              <img src="./image/flag-lang.svg" alt="" class="header__lang_img" />
+              <ul class="lang_list">
+                <li class="lang_list__item"><a href="#">EN</a></li>
+                <li class="lang_list__item"><a href="#">GER</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
-        <div class="overlay-nav"></div>
-    </main>
-    <footer class="footer footer-404">
-        <div class="footer__container">
-            <section class="footer__head">
-                <img src="./image/footer-log.svg" alt="" class="footer__head-log">
-                <div class="header__lang footer_lang">
-                    <button class="header__lang-btn footer__lang_btn" data-lang="btn-lang"></button>
-                    <ul class="header__lang_list">
-                        <li class="header__lang_item"><img src="./image/flag-lang.svg" alt="" class="header__lang_img">
-                            <ul class="lang_list">
-                                <li class="lang_list__item"><a href="#">EN</a></li>
-                                <li class="lang_list__item"><a href="#">GER</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <p class="footer__head_info">Информационная база по Grand Thief Auto V</p>
-            </section>
-            <section class="footer__nav">
-                <div class="footer__nav_group">
-                    <ul class="footer__nav_list">
-                        <li class="footer__nav_item"><a href="#">Программы</a></li>
-                        <li class="footer__nav_item"><a href="#">Раскраски</a></li>
-                        <li class="footer__nav_item"><a href="#">Оружие</a></li>
-                        <li class="footer__nav_item"><a href="#">Скрипты</a></li>
-                    </ul>
-                </div>
-                <div class="footer__nav_group">
-                    <ul class="footer__nav_list">
-                        <li class="footer__nav_item"><a href="#">Игрок</a></li>
-                        <li class="footer__nav_item"><a href="#">Карта</a></li>
-                        <li class="footer__nav_item"><a href="#">Разное</a></li>
-                        <li class="footer__nav_item"><a href="#">Больше</a></li>
-                    </ul>
-                </div>
-            </section>
-            <section class="footer__cta">
-                <div class="footer__cta_bonus">
-                    <p class="footer__cta_p1">Бонус При Регистрации</p>
-                    <p class="footer__cta_p2">На Grand Role Play</p>
-                    <p class="footer__cta_time">Осталось ....</p>
-                </div>
-                <a href="#" class="cta__btn footer-btn">Создать Персонажа</a>
-            </section>
+        <p class="footer__head_info">
+          Информационная база по Grand Thief Auto V
+        </p>
+      </section>
+      <section class="footer__nav">
+        <div class="footer__nav_group">
+          <ul class="footer__nav_list">
+            <li class="footer__nav_item"><a href="#">Программы</a></li>
+            <li class="footer__nav_item"><a href="#">Раскраски</a></li>
+            <li class="footer__nav_item"><a href="#">Оружие</a></li>
+            <li class="footer__nav_item"><a href="#">Скрипты</a></li>
+          </ul>
         </div>
-    </footer>
-    <script src="./js/swiper-bundle.min.js"></script>
-    <script src="./js/graph-modal.min.js"></script>
-    <script src="./js/main.js"></script>
+        <div class="footer__nav_group">
+          <ul class="footer__nav_list">
+            <li class="footer__nav_item"><a href="#">Игрок</a></li>
+            <li class="footer__nav_item"><a href="#">Карта</a></li>
+            <li class="footer__nav_item"><a href="#">Разное</a></li>
+            <li class="footer__nav_item"><a href="#">Больше</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="footer__cta">
+        <div class="footer__cta_bonus">
+          <p class="footer__cta_p1">Бонус При Регистрации</p>
+          <p class="footer__cta_p2">На Grand Role Play</p>
+          <p class="footer__cta_time">Осталось ....</p>
+        </div>
+        <a href="#" class="cta__btn footer-btn">Создать Персонажа</a>
+      </section>
+    </div>
+  </footer>
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="./js/graph-modal.min.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

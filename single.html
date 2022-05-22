@@ -2,280 +2,292 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Single</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Single</title>
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__container">
-            <div class="header__logo">
-                <img class="header__logo_img" src="./image/log-header.svg" alt="">
-            </div>
-            <div class="header__lang">
-                <button class="header__lang-btn" data-lang="btn-lang"></button>
-                <ul class="header__lang_list">
-                    <li class="header__lang_item"><img src="./image/flag-lang.svg" alt="" class="header__lang_img">
-                        <ul class="lang_list">
-                            <li class="lang_list__item"><a href="#">EN</a></li>
-                            <li class="lang_list__item"><a href="#">GER</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <form class="header__form" action="/">
-                <input type="text" class="header__form_search" placeholder="Поиск">
-            </form>
-            <nav class="header__nav" data-nav>
-                <ul class="header__nav_list">
-                    <li class="header__nav_item">
-                        <a href="#" class="header__nav_link">Программы</a>
-                    </li>
-                    <li class="header__nav_item">
-                        <a href="#" class="header__nav_link">Раскраски</a>
-                    </li>
-                    <li class="header__nav_item">
-                        <a href="#" class="header__nav_link">Оружие</a>
-                    </li>
-                    <li class="header__nav_item">
-                        <a href="#" class="header__nav_link">Скрипты</a>
-                    </li>
-                    <li class="header__nav_item">
-                        <a href="#" class="header__nav_link">Игрок</a>
-                    </li>
-                    <li class="header__nav_item">
-                        <a href="#" class="header__nav_link">Карта</a>
-                    </li>
-                    <li class="header__nav_item">
-                        <a href="#" class="header__nav_link">Разное</a>
-                    </li>
-                    <li class="header__nav_item">
-                        <a href="#" class="header__nav_link">Больше</a>
-                    </li>
-                </ul>
-            </nav>
-            <button class="burger" data-burger aria-label="Открыть меню" aria-expanded="false">
-                <span class="burger__line"></span>
-            </button>
+  <header class="header">
+    <div class="header__container">
+      <div class="header__logo">
+        <img class="header__logo_img" src="./image/log-header.svg" alt="" />
+      </div>
+      <div class="header__lang">
+        <button class="header__lang-btn" data-lang="btn-lang"></button>
+        <ul class="header__lang_list">
+          <li class="header__lang_item">
+            <img src="./image/flag-lang.svg" alt="" class="header__lang_img" />
+            <ul class="lang_list">
+              <li class="lang_list__item"><a href="#">EN</a></li>
+              <li class="lang_list__item"><a href="#">GER</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <form class="header__form" action="/">
+        <input type="text" class="header__form_search" placeholder="Поиск" />
+      </form>
+      <nav class="header__nav" data-nav>
+        <ul class="header__nav_list">
+          <li class="header__nav_item">
+            <a href="#" class="header__nav_link">Программы</a>
+          </li>
+          <li class="header__nav_item">
+            <a href="#" class="header__nav_link">Раскраски</a>
+          </li>
+          <li class="header__nav_item">
+            <a href="#" class="header__nav_link">Оружие</a>
+          </li>
+          <li class="header__nav_item">
+            <a href="#" class="header__nav_link">Скрипты</a>
+          </li>
+          <li class="header__nav_item">
+            <a href="#" class="header__nav_link">Игрок</a>
+          </li>
+          <li class="header__nav_item">
+            <a href="#" class="header__nav_link">Карта</a>
+          </li>
+          <li class="header__nav_item">
+            <a href="#" class="header__nav_link">Разное</a>
+          </li>
+          <li class="header__nav_item">
+            <a href="#" class="header__nav_link">Больше</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="burger" data-burger aria-label="Открыть меню" aria-expanded="false">
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </header>
+  <main class="content single-content">
+    <div class="conteiner-content">
+      <div class="bread__crumbs">
+        <ul class="bread__crumbs_list">
+          <li class="bread__crumbs_item">
+            <a href="#" class="bread__crumbs_link">Главная</a>
+          </li>
+          <li class="bread__crumbs_item">
+            <a href="#" class="bread__crumbs_link">Автомобили</a>
+          </li>
+          <li class="bread__crumbs_item">
+            <span class="bread__crumbs_span"> Новые автомобили в игре</span>
+          </li>
+        </ul>
+      </div>
+      <div class="content__bg" style="
+						background: url(./image/content-head.png) no-repeat center / cover;
+					">
+        <div class="content__head_title">
+          <h1>Новые Автомобили в Игре</h1>
         </div>
-    </header>
-    <main class="content single-content">
-        <div class="conteiner-content">
-            <div class="bread__crumbs">
-                <ul class="bread__crumbs_list">
-                    <li class="bread__crumbs_item">
-                        <a href="#" class="bread__crumbs_link">Главная</a>
-                    </li>
-                    <li class="bread__crumbs_item">
-                        <a href="#" class="bread__crumbs_link">Автомобили</a>
-                    </li>
-                    <li class="bread__crumbs_item">
-                        <span class="bread__crumbs_span"> Новые автомобили в игре</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="content__bg" style="background: url(./image/content-head.png) no-repeat center / cover;">
-                <div class="content__head_title">
-                    <h1>Новые Автомобили в Игре</h1>
-                </div>
-                <a href="./index2.html" class="none">
-                    <button class="content__head_btn"><span class="content__head_btn-span"></span></button>
-                </a>
-            </div>
-            <section class="cta">
-                <div class="cta__block">
-                    <div class="cta__text">
-                        <h2 class="cta__title">в такую gta ты еще не играл</h2>
-                        <p class="cta__p">глобальные игровые системы, простое управление, полное погружение</p>
-                    </div>
-                    <a href="#" class="cta__btn cta-btn">
-                        Создать Персонажа
-                    </a>
-                </div>
-            </section>
-            <section class="info-car">
-                <div class="stats">
-                    <time class="stats__time" datetime="2021-03-12 16:00">12 марта 2021 16:00</time>
-                    <span class="stats__views">
-                        2393
-                    </span>
-                    <button class="stats__like" type="button"><span class="stats__like_numb">122</span></button>
-                </div>
-                <div class="descr">
-                    <p class="descr__text">
-                        Товарищи! реализация намеченных плановых заданий требуют определения и уточнения модели
-                        развития. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности
-                        позволяет оценить значение дальнейших направлений развития. Идейные соображения высшего порядка,
-                        а также дальнейшее развитие различных форм деятельности способствует подготовки и реализации
-                        направлений прогрессивного развития. Не следует, однако забывать, что сложившаяся структура
-                        организации влечет за собой процесс внедрения и модернизации систем массового участия.
-                        Разнообразный и богатый опыт сложившаяся структура организации способствует подготовки и
-                        реализации форм развития. Идейные соображения высшего порядка, а также постоянный количественный
-                        рост и сфера нашей активности позволяет оценить значение системы обучения кадров, соответствует
-                        насущным потребностям.
-                    </p>
-                    <img src="./image/inf-car.png" alt="" class="descr__main-img">
-                    <ol class="descr__list">
-                        <li class="descr__list_item">Test list</li>
-                        <li class="descr__list_item">Test list</li>
-                        <li class="descr__list_item">Test list</li>
-                        <li class="descr__list_item">Test list</li>
-                    </ol>
-                    <div class="descr__info">
-                        <img class="descr__info_first-img" src="./image/inf-car.png" alt="">
-                        <p class="descr__info_first-text">Товарищи! реализация намеченных плановых заданий требуют
-                            определения и уточнения модели развития. Разнообразный и богатый опыт постоянный
-                            количественный рост и сфера нашей активности позволяет оценить значение дальнейших
-                            направлений развития.</p>
-                        <p class="descr__info_first-text">Товарищи! реализация намеченных плановых заданий требуют
-                            определения и уточнения модели развития. Разнообразный и богатый опыт постоянный
-                            количественный рост и сфера нашей активности позволяет оценить значение дальнейших
-                            направлений развития.</p>
-                        <img class="descr__info_first-img" src="./image/inf-car.png" alt="">
-
-                    </div>
-                </div>
-                <div class="achiv">
-                    <img src="./image/achiv.png" alt="" class="achiv__img">
-                </div>
-            </section>
-            <section class="swiper-block">
-                <div class="swiper-block__head">
-                    <div class="swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img class="swiper-slide__img" src="./image/bg-slider.png" alt="">
-                                <div class="swiper-slide__caption">
-                                    <div class="swiper-slide__text">
-                                        <h4 class="swiper-slide__title">О проекте</h4>
-                                        <p class="swiper-slide__p">за 2 минуты</p>
-                                    </div>
-                                    <button class="swiper-slide__btn" data-graph-path="first"></button>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="swiper-slide__img" src="./image/bg-slider.png" alt="">
-                                <div class="swiper-slide__caption">
-                                    <div class="swiper-slide__text">
-                                        <h4 class="swiper-slide__title">О проекте</h4>
-                                        <p class="swiper-slide__p">за 2 минуты</p>
-                                    </div>
-                                    <button class="swiper-slide__btn" data-graph-path="second"></button>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="swiper-slide__img" src="./image/bg-slider.png" alt="">
-                                <div class="swiper-slide__caption">
-                                    <div class="swiper-slide__text">
-                                        <h4 class="swiper-slide__title">О проекте</h4>
-                                        <p class="swiper-slide__p">за 2 минуты</p>
-                                    </div>
-                                    <button class="swiper-slide__btn" data-graph-path="third"></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-block__descr">
-                    <h3 class="swiper__descr_title">Grand role play <span>gta v</span></h3>
-                    <a href="#" class="swiper__descr_link">Как начать играть</a>
-                </div>
-                <div class="swiper-block__bottom">
-                    <div class="swiper-pagination">
-                        <span class="swiper-pagination-bullet"></span>
-                    </div>
-                    <div class="swiper__span"></div>
-                </div>
-                <div class="graph-modal">
-                    <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="first">
-                        <button class="btn-reset graph-modal__close js-modal-close"
-                            aria-label="Закрыть модальное окно"></button>
-                        <div class="graph-modal__content">
-                            <iframe class="modal__video" width="560" height="315"
-                                src="https://www.youtube.com/embed/9kUKTGoroKk" title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="second">
-                        <button class="btn-reset graph-modal__close js-modal-close"
-                            aria-label="Закрыть модальное окно"></button>
-                        <div class="graph-modal__content">
-                            <iframe class="modal__video" width="560" height="315"
-                                src="https://www.youtube.com/embed/6CcDcAXoV-8" title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="third">
-                        <button class="btn-reset graph-modal__close js-modal-close"
-                            aria-label="Закрыть модальное окно"></button>
-                        <div class="graph-modal__content">
-                            <iframe class="modal__video" width="560" height="315"
-                                src="https://www.youtube.com/embed/qXrHnB9-oDk" title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        <a href="./index2.html" class="none">
+          <button class="content__head_btn">
+            <span class="content__head_btn-span"></span>
+          </button>
+        </a>
+      </div>
+      <section class="cta">
+        <div class="cta__block">
+          <div class="cta__text">
+            <h2 class="cta__title">в такую gta ты еще не играл</h2>
+            <p class="cta__p">
+              глобальные игровые системы, простое управление, полное
+              погружение
+            </p>
+          </div>
+          <a href="#" class="cta__btn cta-btn"> Создать Персонажа </a>
         </div>
-        <div class="overlay-nav"></div>
-    </main>
-    <footer class="footer">
-        <div class="footer__container">
-            <section class="footer__head">
-                <img src="./image/footer-log.svg" alt="" class="footer__head-log">
-                <div class="header__lang footer_lang">
-                    <button class="header__lang-btn footer__lang_btn" data-lang="btn-lang"></button>
-                    <ul class="header__lang_list">
-                        <li class="header__lang_item"><img src="./image/flag-lang.svg" alt="" class="header__lang_img">
-                            <ul class="lang_list">
-                                <li class="lang_list__item"><a href="#">EN</a></li>
-                                <li class="lang_list__item"><a href="#">GER</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <p class="footer__head_info">Информационная база по Grand Thief Auto V</p>
-            </section>
-            <section class="footer__nav">
-                <div class="footer__nav_group">
-                    <ul class="footer__nav_list">
-                        <li class="footer__nav_item"><a href="#">Программы</a></li>
-                        <li class="footer__nav_item"><a href="#">Раскраски</a></li>
-                        <li class="footer__nav_item"><a href="#">Оружие</a></li>
-                        <li class="footer__nav_item"><a href="#">Скрипты</a></li>
-                    </ul>
-                </div>
-                <div class="footer__nav_group">
-                    <ul class="footer__nav_list">
-                        <li class="footer__nav_item"><a href="#">Игрок</a></li>
-                        <li class="footer__nav_item"><a href="#">Карта</a></li>
-                        <li class="footer__nav_item"><a href="#">Разное</a></li>
-                        <li class="footer__nav_item"><a href="#">Больше</a></li>
-                    </ul>
-                </div>
-            </section>
-            <section class="footer__cta">
-                <div class="footer__cta_bonus">
-                    <p class="footer__cta_p1">Бонус При Регистрации</p>
-                    <p class="footer__cta_p2">На Grand Role Play</p>
-                    <p class="footer__cta_time">Осталось ....</p>
-                </div>
-                <a href="#" class="cta__btn footer-btn">Создать Персонажа</a>
-            </section>
+      </section>
+      <section class="info-car">
+        <div class="stats">
+          <time class="stats__time" datetime="2021-03-12 16:00">12 марта 2021 16:00</time>
+          <span class="stats__views"> 2393 </span>
+          <button class="stats__like" type="button">
+            <span class="stats__like_numb">122</span>
+          </button>
         </div>
-    </footer>
-    <script src="./js/swiper-bundle.min.js"></script>
-    <script src="./js/graph-modal.min.js"></script>
-    <script src="./js/main.js"></script>
+        <div class="descr">
+          <p class="descr__text">
+            Товарищи! реализация намеченных плановых заданий требуют
+            определения и уточнения модели развития. Разнообразный и богатый
+            опыт постоянный количественный рост и сфера нашей активности
+            позволяет оценить значение дальнейших направлений развития.
+            Идейные соображения высшего порядка, а также дальнейшее развитие
+            различных форм деятельности способствует подготовки и реализации
+            направлений прогрессивного развития. Не следует, однако забывать,
+            что сложившаяся структура организации влечет за собой процесс
+            внедрения и модернизации систем массового участия. Разнообразный и
+            богатый опыт сложившаяся структура организации способствует
+            подготовки и реализации форм развития. Идейные соображения высшего
+            порядка, а также постоянный количественный рост и сфера нашей
+            активности позволяет оценить значение системы обучения кадров,
+            соответствует насущным потребностям.
+          </p>
+          <img src="./image/inf-car.png" alt="" class="descr__main-img" />
+          <ol class="descr__list">
+            <li class="descr__list_item">Test list</li>
+            <li class="descr__list_item">Test list</li>
+            <li class="descr__list_item">Test list</li>
+            <li class="descr__list_item">Test list</li>
+          </ol>
+          <div class="descr__info">
+            <img class="descr__info_first-img" src="./image/inf-car.png" alt="" />
+            <p class="descr__info_first-text">
+              Товарищи! реализация намеченных плановых заданий требуют
+              определения и уточнения модели развития. Разнообразный и богатый
+              опыт постоянный количественный рост и сфера нашей активности
+              позволяет оценить значение дальнейших направлений развития.
+            </p>
+            <p class="descr__info_first-text">
+              Товарищи! реализация намеченных плановых заданий требуют
+              определения и уточнения модели развития. Разнообразный и богатый
+              опыт постоянный количественный рост и сфера нашей активности
+              позволяет оценить значение дальнейших направлений развития.
+            </p>
+            <img class="descr__info_first-img" src="./image/inf-car.png" alt="" />
+          </div>
+        </div>
+        <div class="achiv">
+          <img src="./image/achiv.png" alt="" class="achiv__img" />
+        </div>
+      </section>
+      <section class="swiper-block">
+        <div class="swiper-block__head">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="swiper-slide__img" src="./image/bg-slider.png" alt="" />
+                <div class="swiper-slide__caption">
+                  <div class="swiper-slide__text">
+                    <h4 class="swiper-slide__title">О проекте</h4>
+                    <p class="swiper-slide__p">за 2 минуты</p>
+                  </div>
+                  <button class="swiper-slide__btn" data-graph-path="first"></button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img class="swiper-slide__img" src="./image/bg-slider.png" alt="" />
+                <div class="swiper-slide__caption">
+                  <div class="swiper-slide__text">
+                    <h4 class="swiper-slide__title">О проекте</h4>
+                    <p class="swiper-slide__p">за 2 минуты</p>
+                  </div>
+                  <button class="swiper-slide__btn" data-graph-path="second"></button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img class="swiper-slide__img" src="./image/bg-slider.png" alt="" />
+                <div class="swiper-slide__caption">
+                  <div class="swiper-slide__text">
+                    <h4 class="swiper-slide__title">О проекте</h4>
+                    <p class="swiper-slide__p">за 2 минуты</p>
+                  </div>
+                  <button class="swiper-slide__btn" data-graph-path="third"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-block__descr">
+          <h3 class="swiper__descr_title">
+            Grand role play <span>gta v</span>
+          </h3>
+          <a href="#" class="swiper__descr_link">Как начать играть</a>
+        </div>
+        <div class="swiper-block__bottom">
+          <div class="swiper-pagination">
+            <span class="swiper-pagination-bullet"></span>
+          </div>
+          <div class="swiper__span"></div>
+        </div>
+        <div class="graph-modal">
+          <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="first">
+            <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+            <div class="graph-modal__content">
+              <iframe class="modal__video" width="560" height="315" src="https://www.youtube.com/embed/9kUKTGoroKk"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="second">
+            <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+            <div class="graph-modal__content">
+              <iframe class="modal__video" width="560" height="315" src="https://www.youtube.com/embed/6CcDcAXoV-8"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="third">
+            <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+            <div class="graph-modal__content">
+              <iframe class="modal__video" width="560" height="315" src="https://www.youtube.com/embed/qXrHnB9-oDk"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="overlay-nav"></div>
+  </main>
+  <footer class="footer">
+    <div class="footer__container">
+      <section class="footer__head">
+        <img src="./image/footer-log.svg" alt="" class="footer__head-log" />
+        <div class="header__lang footer_lang">
+          <button class="header__lang-btn footer__lang_btn" data-lang="btn-lang"></button>
+          <ul class="header__lang_list">
+            <li class="header__lang_item">
+              <img src="./image/flag-lang.svg" alt="" class="header__lang_img" />
+              <ul class="lang_list">
+                <li class="lang_list__item"><a href="#">EN</a></li>
+                <li class="lang_list__item"><a href="#">GER</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <p class="footer__head_info">
+          Информационная база по Grand Thief Auto V
+        </p>
+      </section>
+      <section class="footer__nav">
+        <div class="footer__nav_group">
+          <ul class="footer__nav_list">
+            <li class="footer__nav_item"><a href="#">Программы</a></li>
+            <li class="footer__nav_item"><a href="#">Раскраски</a></li>
+            <li class="footer__nav_item"><a href="#">Оружие</a></li>
+            <li class="footer__nav_item"><a href="#">Скрипты</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav_group">
+          <ul class="footer__nav_list">
+            <li class="footer__nav_item"><a href="#">Игрок</a></li>
+            <li class="footer__nav_item"><a href="#">Карта</a></li>
+            <li class="footer__nav_item"><a href="#">Разное</a></li>
+            <li class="footer__nav_item"><a href="#">Больше</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="footer__cta">
+        <div class="footer__cta_bonus">
+          <p class="footer__cta_p1">Бонус При Регистрации</p>
+          <p class="footer__cta_p2">На Grand Role Play</p>
+          <p class="footer__cta_time">Осталось ....</p>
+        </div>
+        <a href="#" class="cta__btn footer-btn">Создать Персонажа</a>
+      </section>
+    </div>
+  </footer>
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="./js/graph-modal.min.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
