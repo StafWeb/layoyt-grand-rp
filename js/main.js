@@ -8,27 +8,27 @@ const headerHeight = header.offsetHeight;
 document.querySelector(':root').style.setProperty('--header-height', `${headerHeight}px`);
 
 burger?.addEventListener('click', () => {
-    body.classList.toggle('stop-scroll');
-    burger?.classList.toggle('burger--active');
-    nav?.classList.toggle('nav--visible');
-    overlayNav.classList.toggle('show');
+  body.classList.toggle('stop-scroll');
+  burger?.classList.toggle('burger--active');
+  nav?.classList.toggle('nav--visible');
+  overlayNav.classList.toggle('show');
 });
 
 navItems.forEach(el => {
-    el.addEventListener('click', () => {
-        body.classList.remove('stop-scroll');
-        burger?.classList.remove('burger--active');
-        nav?.classList.remove('nav--visible');
-        overlayNav.classList.remove('show');
-    });
+  el.addEventListener('click', () => {
+    body.classList.remove('stop-scroll');
+    burger?.classList.remove('burger--active');
+    nav?.classList.remove('nav--visible');
+    overlayNav.classList.remove('show');
+  });
 });
 
 window.addEventListener('click', function (event) {
-    if (event.target.dataset.lang === 'btn-lang') {
-        const langWrapper = event.target.closest('.header__lang')
-        const langList = langWrapper.querySelector('.lang_list')
-        langList.classList.toggle('show');
-    }
+  if (event.target.dataset.lang === 'btn-lang') {
+    const langWrapper = event.target.closest('.header__lang')
+    const langList = langWrapper.querySelector('.lang_list')
+    langList.classList.toggle('show');
+  }
 
 });
 
@@ -45,27 +45,28 @@ heart.onclick = function () {
 };
 
 const swiper = new Swiper('.swiper', {
-    pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-        clickable: true,
-    },
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true,
+  },
 });
 
 const videos = document.querySelectorAll('iframe');
 
+
 const modal = new GraphModal({
-    isOpen: (modal) => {
+  isOpen: (modal) => {
 
-    },
-    isClose: () => {
-        for (let vid of videos) {
-            const videoLink = vid.src;
-            vid.src = '';
-            vid.src = videoLink;
-            console.log(close);
-        };
+  },
+  isClose: () => {
+    for (let vid of videos) {
+      const videoLink = vid.src;
+      vid.src = '';
+      vid.src = videoLink;
+      console.log(close);
+    };
 
-    }
+  }
 });
 

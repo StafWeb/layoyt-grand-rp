@@ -12,8 +12,6 @@
     object-fit: cover;
 }
 
-.content__card_title {
-}
 .content__card_title-h4 {
     font-family: 'Akrobat', serif;
     font-weight: 600;
@@ -64,4 +62,12 @@
     .content__post{
         grid-template-columns: 1fr;
     }
+}
+
+@media (max-width: 320px){
+  .content__card{
+    display: grid;
+    grid-column: span2;
+
+  }
 }
